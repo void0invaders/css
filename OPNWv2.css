@@ -30,6 +30,19 @@ input[type="submit"], .button, .button1, .button2 {
     color: var(--white);
 }
 
+h3, .h3 {
+    border-color: var(--gold);
+    font-family: var(--osw);
+    font-size: 22px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 strong, .h3 strong {
+    font-weight: lighter;
+}
+
 .OPNW_quickrep p.right {
     display: flex;
     gap: 5px;
@@ -77,15 +90,6 @@ input[type="submit"], .button, .button1, .button2 {
     margin-bottom: 20px;
     outline: 1px solid var(--gold);
     outline-offset: -20px;
-}
-
-.OPNW_quickrep .h3 {
-    border-color: var(--gold);
-    font-family: var(--osw);
-    font-size: 22px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 .OPNW_quickmod {
