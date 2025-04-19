@@ -43,6 +43,15 @@ h3 strong, .h3 strong {
     font-weight: lighter;
 }
 
+.block {
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 40px;
+    outline: 1px solid var(--gold);
+    outline-offset: -20px;
+}
+
 .OPNW_quickrep p.right {
     display: flex;
     gap: 5px;
