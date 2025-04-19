@@ -25,6 +25,10 @@ input[type="submit"], .button, .button1, .button2 {
     font-weight: 400;
 }
 
+.button a, .button1 a, .button2 a {
+    color: var(--white);
+}
+
 .topic-actions-buttons > a, .topic-actions-buttons > span, .topic-actions-buttons > #addthis-toolbar {
     margin: 0;
     color: var(--white);
