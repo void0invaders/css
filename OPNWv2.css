@@ -23,6 +23,7 @@
     margin-top: 20px;
 }
 
+
 /***** CATÉGORIES - BEGIN *****/
 .OPNW_category {
     display: flex;
@@ -230,7 +231,7 @@
     align-items: center;
     justify-content: center;
     padding: 7px 0;
-    background-color: var(--grey);
+    background-color: var(--greyer);
     font-family: var(--osw);
     text-transform: uppercase;
     font-size: 30px;
@@ -453,7 +454,7 @@
 }
  
 #partie-rp .OPNW_catfo_desc div::-webkit-scrollbar-thumb, #partie-rp .OPNW_catfosub_link::-webkit-scrollbar-thumb {
-  background: var(--grey);
+  background: var(--greyer);
   border-radius: 10px;
 }
 
@@ -461,7 +462,7 @@
     height: auto;
     width: 100%;
     flex: 1;
-    background-color: var(--grey);
+    background-color: var(--greyer);
     color: var(--gold);
     font-weight: lighter;
     text-align: center;
@@ -523,7 +524,8 @@
     --white: #fff;
     --light: #968E8E;
     --brown: #733f31;
-    --grey: #363032;
+    --grey: #30303B;
+    --greyer: #363032;
     --dark: #212129;
     --darker: #121216;
     --black: #000;
@@ -782,7 +784,7 @@ a.mainmenu[href="/"] {
   position: relative;
   display: grid;
   place-items: center;
-  background-color: var(--grey);
+  background-color: var(--greyer);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -989,7 +991,7 @@ a.mainmenu[href="/"] {
   transition: 0.2s opacity ease;
   transform: translate(-50%, -50%);
   border-radius: 5px;
-  background: var(--grey);
+  background: var(--greyer);
   color: var(--gold);
 }
 
@@ -1256,7 +1258,7 @@ a.mainmenu[href="/"] {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--grey);
+    background-color: var(--greyer);
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -1506,7 +1508,7 @@ a.mainmenu[href="/"] {
     letter-spacing: 1px;
     max-height: 198px;
     overflow: auto;
-    scrollbar-color: var(--grey) #121216;
+    scrollbar-color: var(--greyer) #121216;
     scrollbar-width: thin;
 }
 
@@ -1515,7 +1517,7 @@ a.mainmenu[href="/"] {
 }
 
 .OPNW_QEEL_txt::-webkit-scrollbar-thumb {
-    background-color: var(--grey);
+    background-color: var(--greyer);
     border-radius: 100px;
 }
 
