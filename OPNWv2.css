@@ -15,7 +15,7 @@ select {
 
 input[type="submit"], .button, .button1, .button2 {
     background-color: var(--grey);
-    color: var(--white);
+    color: var(--white) !important;
     border-radius: 0;
     box-shadow: none;
     font-family: var(--osw);
@@ -23,10 +23,6 @@ input[type="submit"], .button, .button1, .button2 {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
-}
-
-.button a, .button1 a, .button2 a {
-    color: var(--white);
 }
 
 .topic-actions-buttons > a, .topic-actions-buttons > span, .topic-actions-buttons > #addthis-toolbar {
