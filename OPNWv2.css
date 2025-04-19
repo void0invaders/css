@@ -1,3 +1,76 @@
+label {
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+select {
+    background-color: var(--grey);
+    border-color: var(--gold);
+    color: var(--white);
+    padding: 10px 0px 9px 5px;
+    border-right: 10px solid var(--grey);
+}
+
+input[type="submit"], .button, .button1, .button2 {
+    background-color: var(--grey);
+    color: var(--white);
+    border-radius: 0;
+    box-shadow: none;
+    font-family: var(--osw);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.topic-actions-buttons > a, .topic-actions-buttons > span, .topic-actions-buttons > #addthis-toolbar {
+    margin: 0;
+    color: var(--white);
+}
+
+.OPNW_quickrep p.right {
+    display: flex;
+    gap: 5px;
+}
+
+.OPNW_quickrep .sceditor-container textarea {
+    transition: none;
+    min-width: 100% !important;
+    background-color: #3a3a46 !important;
+    border-radius: 0 0 12px 12px;
+    color: var(--white) !important;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+}
+
+.OPNW_quickrep .sceditor-toolbar {
+    border-color: #212129 !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    text-align: center;
+    width: 100%;
+    background-color: var(--grey) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.OPNW_quickrep .sceditor-group {
+    background-color: transparent !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 0 !important;
+    border-style: solid !important;
+    border-width: 0 0 0 1px !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
+
 .OPNW_quickrep {
     background-color: var(--dark);
     padding: 35px 40px 40px;
@@ -20,6 +93,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 40px;
     margin-top: 20px;
 }
 
@@ -524,6 +598,7 @@
     --white: #fff;
     --light: #968E8E;
     --brown: #733f31;
+    --lgrey: #3a3a46;
     --grey: #30303B;
     --greyer: #363032;
     --dark: #212129;
