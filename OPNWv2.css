@@ -1,3 +1,28 @@
+.OPNW_linklist {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"] a:hover, .button a:hover, .button1 a:hover, .button2 a:hover, input[type="submit"]:hover a, .button:hover a, .button1:hover a, .button2:hover a {
+    color: var(--white) !important;
+}
+
+fieldset.submit-buttons {
+    margin: 0;
+}
+
+.panel {
+    padding: 20px;
+}
+
+.panel fieldset {
+    margin-bottom: 0;
+}
+
+.postbody {
+    margin-right: 0;
+}
+
 label {
     color: #fff;
     cursor: pointer;
