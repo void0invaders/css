@@ -1,3 +1,60 @@
+/***** LISTE DES SUJETS - START *****/
+.OPNW_toplist_title {
+    background: linear-gradient(45deg, var(--gold), var(--brown), var(--browner));
+    font-family: var(--osw);
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.OPNW_topic {
+    background-color: var(--grey);
+    border-bottom: 1px solid var(--gold);
+    display: flex;
+    gap: 20px;
+    height: 150px;
+}
+
+.OPNW_topic_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.OPNW_topic_bloc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.OPNW_topic_title {
+    display: flex;
+    gap: 5px;
+    font-family: var(--osw);
+    font-size: 2rem;
+}
+
+.OPNW_topic_type {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.OPNW_topic_authpag {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.OPNW_topic_author a {
+    text-transform: uppercase;
+}
+/***** LISTE DES SUJETS - END *****/
+
 .OPNW_linklist {
     display: flex;
     justify-content: space-between;
