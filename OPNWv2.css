@@ -1685,7 +1685,8 @@ select:focus-visible {
     width: 200px;
     height: 149px;
     object-fit: cover;
-    object-position: top right;
+    object-position: top;
+    margin-left: 20px;
 }
 /***** LISTE DES SUJETS - END *****/
 
