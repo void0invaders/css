@@ -1554,6 +1554,7 @@ select:focus-visible {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
 
 .OPNW_topic_title {
@@ -1566,6 +1567,10 @@ select:focus-visible {
 .OPNW_topic_type {
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.OPNW_topic_type strong {
+    font-weight: normal;
 }
 
 .OPNW_topic_authpag {
@@ -1583,16 +1588,104 @@ select:focus-visible {
     text-transform: uppercase;
 }
 
+.OPNW_topic_pag .pagination span a:link, .OPNW_topic_pag .pagination span a:visited, .OPNW_topic_pag .pagination span a:active {
+    font-size: 1.5rem;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.OPNW_topic_end {
+    display: flex;
+    gap: 20px;
+}
+
+.OPNW_topic_infos {
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.OPNW_topic_lastpost {
+    display: flex;
+    gap: 12px;
+    background-color: var(--dark);
+    justify-content: flex-end;
+    padding: 10px 10px 12px 10px;
+}
+
+.OPNW_topic_lastauthdate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.OPNW_topic_lastauthdate a {
+    font-family: var(--osw);
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.OPNW_topic_lastlink {
+    display: flex;
+    align-items: center;
+}
+
+.OPNW_topic_lastlink a {
+    display: block;
+    padding-top: 4px;
+}
+
+.OPNW_topic_lastlink a img {
+    width: 30px;
+    height: 30px;
+}
+
+.OPNW_topic_stat {
+    display: flex;
+    gap: 10px;
+}
+
+.OPNW_topic_stat div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-family: var(--osw);
+    font-size: 2.5rem;
+    justify-content: center;
+}
+
+.OPNW_topic_views {
+    background-color: var(--brown);
+}
+
+.OPNW_topic_replies {
+    background-color: var(--browner);
+}
+
 .OPNW_topic_ava {
     min-width: 220px;
+    position: relative;
+}
+
+.OPNW_topicgrad {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(100deg, var(--grey) 20%, #30303b9c, transparent);
 }
 
 .OPNW_topic_ava img {
     width: 200px;
     height: 149px;
     object-fit: cover;
-    object-position: top;
-    margin-left: 20px;
+    object-position: top right;
 }
 /***** LISTE DES SUJETS - END *****/
 
