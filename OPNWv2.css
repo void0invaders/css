@@ -37,6 +37,39 @@ body {
     display: none!important;
 }
 
+#cp-main .panel.sig {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+input[type="text"], .inputbox {
+    background-color: var(--grey);
+}
+
+div.sceditor-dropdown {
+    background: var(--dark)!important;
+    border: none!important;
+    border-radius: 10px!important;
+    color: #fff!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.sceditor-dropdown input, div.sceditor-dropdown textarea {
+    border: 1px solid var(--gold)!important;
+    border-top-color: var(--gold)!important;
+}
+
+div.sceditor-dropdown .button {
+    background: var(--gold)!important;
+    border: none!important;
+}
+
+div.sceditor-dropdown label {
+    color: var(--gold)!important;
+}
+
 
 /***** NAVIGATION - START *****/
 .OPNW_navbar_horizontal {
@@ -1688,9 +1721,202 @@ select:focus-visible {
     object-position: top;
     margin-left: 20px;
 }
+
+.OPNW_notopic {
+    background-color: var(--dark);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--osw);
+    font-size: 2rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
 /***** LISTE DES SUJETS - END *****/
 
-/***** APPARENCE SUJET - START *****/
+/***** APPARENCE DU SUJET - START *****/
+.OPNW_viewtopic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.OPNW_postbloc {
+    display: flex;
+    gap: 20px;
+}
+
+.OPNW_postavinf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.OPNW_postava {
+    width: 280px;
+    height: 480px;
+    background-color: var(--dark);
+    padding: 40px;
+    outline: 1px solid var(--gold);
+    outline-offset: -20px;
+    position: relative;
+}
+
+.OPNW_postinfos {
+    position: absolute;
+    background-color: var(--grey);
+    width: 200px;
+    height: 400px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--gold);
+    font-family: var(--rob);
+    font-size: 16px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.OPNW_postinfos:hover {
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+
+.OPNW_postinfos span, .OPNW_postinfos span span {
+    font-family: var(--osw);
+    text-transform: uppercase;
+    color: var(--gold) !important;
+}
+
+.OPNW_postprofil {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--dark);
+    padding: 40px;
+    outline: 1px solid var(--gold);
+    outline-offset: -20px;
+}
+
+.OPNW_postbody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.OPNW_postheader {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark);
+    padding: 40px;
+    outline: 1px solid var(--gold);
+    outline-offset: -20px;
+}
+
+.OPNW_postauthor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+.OPNW_postpseudo {
+    font-family: var(--osw);
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.OPNW_postpseudo a span strong {
+    font-weight: normal;
+}
+
+.OPNW_postactions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.OPNW_postdate {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.OPNW_postoption {
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+}
+
+.OPNW_postoption a i[class*='ion-'] {
+    margin: 0;
+}
+
+.OPNW_postcontent {
+    padding: 20px 40px 40px;
+    background-color: var(--dark);
+    min-height: 440px;
+}
+
+.OPNW_postitle {
+    font-family: var(--osw);
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 28px;
+    border-bottom: 2px solid var(--gold);
+    padding: 20px 0;
+}
+
+.OPNW_posttxt {
+    padding-top: 15px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.OPNW_postedit:empty {
+    display: none;
+}
+
+.OPNW_postedit {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: var(--lgrey);
+}
+
+.OPNW_postedit br:first-child {
+    display: none;
+}
+
+.OPNW_postsigna br:first-child, .OPNW_postsigna br:nth-child(2) {
+    display: none;
+}
+
+.OPNW_postsigna::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--gold);
+}
+
+.OPNW_postsigna {
+    padding: 40px;
+    background-color: var(--dark);
+}
+
+.OPNW_quickrep {
+    margin-bottom: 0;
+}
+
 #textarea_content p.right {
     display: flex;
     gap: 5px;
@@ -1735,7 +1961,6 @@ select:focus-visible {
 .OPNW_quickrep {
     background-color: var(--dark);
     padding: 35px 40px 40px;
-    margin-bottom: 20px;
     outline: 1px solid var(--gold);
     outline-offset: -20px;
 }
@@ -1748,7 +1973,15 @@ select:focus-visible {
     gap: 40px;
     margin-top: 20px;
 }
-/***** APPARENCE SUJET - END *****/
+
+.OPNW_postsep {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gold);
+    margin: 20px 0;
+}
+/***** APPARENCE DU SUJET - END *****/
 
 
 /***** QEEL - START *****/
