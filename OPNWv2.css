@@ -1,6 +1,9 @@
 :root {
     --gold: #ffa667;
     --red: #D31141;
+    --res: #CE8013;
+    --taken: #A44141;
+    --free: #7EC557;
     --white: #fff;
     --light: #968E8E;
     --brown: #733f31;
@@ -68,6 +71,127 @@ div.sceditor-dropdown .button {
 
 div.sceditor-dropdown label {
     color: var(--gold)!important;
+}
+
+#ucp, .ucp-main {
+    margin-top: 15px !important;
+}
+
+input[type="radio"] {
+  accent-color: var(--gold);
+}
+
+#ucp h1.page-title, .ucp-main h1.page-title {
+    color: var(--gold) !important;
+    font-family: var(--osw);
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    text-transform: uppercase;
+    margin: 0 0 0 30px !important;
+}
+
+.sub-header-info h1.page-title {
+    border-color: var(--gold);
+    font-family: var(--osw);
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white);
+    border-style: solid;
+    border-width: 0 0 2px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.page-title .solo {
+    font-family: var(--osw);
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gold);
+}
+
+.sub-header-info {
+    width: 100%;
+}
+
+.panel {
+    box-shadow: none;
+}
+
+fieldset dl:hover dt label {
+    color: var(--white);
+}
+
+fieldset dl dt label {
+    cursor: default;
+}
+
+fieldset dl dt, fieldset dl dt span {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+fieldset.polls dt {
+    width: 50%;
+    text-align: right;
+    line-height: 2.8rem;
+}
+
+fieldset.polls dd {
+    padding: 0 20px;
+}
+
+fieldset.polls dl.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+fieldset.polls dl.centered dt {
+  display: none;
+}
+
+fieldset.polls dl.centered dd {
+  width: auto;
+  float: none;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"], .inputbox {
+    padding: 10px 5px 9px 10px;
+}
+
+#tabs ul a span {
+    color: var(--gold);
+    font-family: var(--osw);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#tabs ul a {
+    border-width: 0px;
+}
+
+#tabs ul li {
+    background-color: var(--darker);
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#tabs ul li:hover {
+    background-color: var(--greyer);
+}
+
+#tabs ul li.activetab {
+    background-color: var(--dark);
+}
+
+#tabs ul a:hover span {
+    color: var(--white);
 }
 
 
@@ -2289,3 +2413,273 @@ select:focus-visible {
     display: none;
 }
 /***** FOOTER - END *****/
+
+/*************** MEDIA QUERIES ***************/
+@media only screen and (min-width: 1920px) {
+  .OPNW_headtitle {font-size:87px!important;}
+  .OPNW_QEEL_grpdesc_txt {height: 103px!important;}
+}
+
+@media only screen and (max-width: 1919px) {
+  .OPNW_headtitle {font-size:68px!important;}
+  .OPNW_QEEL_title {font-size: 74px!important;}
+  .OPNW_QEEL_grpdesc {height: 179px!important;}
+  .OPNW_QEEL_grpdesc_txt {height: 102px!important;}
+  .OPNW_catfo_img img {width: 890px!important; height: 180px!important;}
+  .OPNW_catfo_sub {width: 930px!important;}
+  .OPNW_catfosub_link {overflow: auto!important;}
+  .OPNW_catfostat {font-size: 20px!important;}
+  .OPNW_catfolastxt_infos a {font-size: 18px!important;}
+  .last-post-icon {padding: 3px 0 0 5px!important;}
+  .OPNW_catfolastxt_title a {max-width: 325px!important;}
+  
+  #partie-rp .OPNW_cat_forum {min-height: 380px;}
+  #partie-rp .OPNW_catfo_new {height: 380px!important;}
+  #partie-rp .OPNW_catfo_img img {height: 315px !important; width: 100% !important;}
+  #partie-rp .OPNW_catfo_title {font-size: 30px!important;}
+  #partie-rp .OPNW_catfo_title a {padding-right: 20px!important;}
+  #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_title a {padding-left: 20px!important; padding-right: 0 !important;}
+  #partie-rp .OPNW_catfo_desc {height: 245px!important;}
+  #partie-rp .OPNW_catfo_desc div {font-size: 16px!important;}
+  #partie-rp .OPNW_catfo_sub {width: 38% !important; height: 39%!important;}
+  #partie-rp .OPNW_catfosub_link {gap: 10px!important;}
+  #partie-rp .OPNW_catfosub_link a {font-size: 18px!important;}
+  #partie-rp .OPNW_catfo_lastpost {width: 38%!important;}
+  #partie-rp .OPNW_catfolast {height: 51%!important;}
+  #partie-rp .OPNW_catfolast_ava {width: 130px!important; height: 130px!important;}
+  #partie-rp .OPNW_catfolast_ava img {width: 130px!important; height: 130px!important;}
+  #partie-rp .OPNW_catfolastxt_title a {max-width: 315px !important;}
+  #partie-rp .last-post-icon {padding: 6px 0 0 5px !important;}
+  
+  .OPNW_postsigna img {max-width: 100%;}
+}
+
+@media only screen and (max-width: 1599px) {
+  .OPNW_headtitle {font-size:59px!important;}
+  .OPNW_nav_bienv {font-size: 16px!important;}
+  .OPNW_QEEL_title {font-size: 65px!important;}
+  .OPNW_QEEL_stauser, .OPNW_QEEL_stapost {font-size: 24px!important;}
+  .OPNW_QEEL_72h, .OPNW_QEEL_online {height: 279px!important;}
+  .OPNW_QEEL_grpdesc {height: 187px!important;}
+  .OPNW_QEEL_grpdesc_txt {height: 111px!important;}
+  .OPNW_catfo_sub {width: 825px!important;}
+  .OPNW_catfo_img img {width: 770px !important;}
+  .OPNW_catfolastxt_title a {max-width: 295px !important;}
+  
+  #partie-rp .OPNW_catfolastxt_title a {max-width: 250px !important;}
+  #partie-rp .OPNW_catfostat {font-size: 12px !important;}
+}
+
+@media only screen and (max-width: 1439px) {
+  .OPNW_headtitle {font-size:50px!important; height: 37px!important;}
+  .OPNW_nav_button {display: none!important;}
+  .OPNW_QEEL_title {font-size: 55px!important;}
+  .OPNW_QEEL_stauser, .OPNW_QEEL_stapost {font-size: 20px!important;}
+  .OPNW_QEEL_72h, .OPNW_QEEL_online {height: 282px!important;}
+  .OPNW_QEEL_grpdesc {height: 187px!important;}
+  .OPNW_catfo_img img {height: 180px!important; width: 615px!important;}
+  .OPNW_catfolastxt_infos a {font-size: 20px!important;}
+  .last-post-icon {padding: 5px 0 0 5px!important;}
+  .OPNW_catfostat {font-size: 20px!important;}
+  .OPNW_catfo_sub {width: 660px!important; height: 260px!important;}
+  .OPNW_catfosub_link a {font-size: 20px!important;}
+  
+  #partie-rp .OPNW_catfolast_ava {display: none;}
+  #partie-rp .OPNW_catfolastxt_title a {max-width: 340px !important;}
+  
+  .OPNW_toptitlink, .OPNW_topic_type {font-size: 1.6rem;}
+  
+  .OPNW_quickmod { height: auto !important; flex-wrap: wrap;}
+}
+
+@media only screen and (max-width: 1279px) {
+  .OPNW_headtitle {font-size:72px!important; height: 55px!important; margin-bottom: 5px!important;}
+  .OPNW_header {padding: 25px!important; flex-direction: column;}
+  .OPNW_nav_button {display: none!important;}
+  .OPNW_nav_user {display: none!important;}
+  .OPNW_navbar_vertical {display: none!important;}
+  .OPNW_footer {padding: 25px!important;}
+  .OPNW_navbar_horizontal {height: auto!important; justify-content: flex-end!important; gap: 0!important; width: 100%!important; align-items: center!important;}
+  .OPNW_nav_right {width: 100%!important;}
+  .OPNW_nav_links {width: 100%!important; display: flex!important; flex-wrap: wrap!important; justify-content: space-around!important; padding: 5px!important;}
+  .OPNW_nav_links li a, .OPNW_nav_links a {font-size: 18px!important;}
+  a.mainmenu[href="/"] {display: flex!important; align-items: center!important;}
+  .OPNW_headcont_txt {height: 120px!important;}
+  .OPNW_forum {padding: 0 25px !important;}
+  .OPNW_QEEL_title {font-size: 54px!important;}
+  .OPNW_QEEL {flex-direction: column;}
+  .OPNW_QEEL_left {width: 100%!important;}
+  .OPNW_QEEL_right {width: 100%!important;}
+  .OPNW_QEEL_img {display: none!important;}
+  .OPNW_h2txt, .OPNW_h2sha {font-size: 40px!important;}
+  .OPNW_catfo_img img {width: 100% !important;}
+  .OPNW_catfolast_ava {left: -30px!important; width: 145px!important; height: 145px!important;}
+  .OPNW_catfolast_ava img {width: 145px!important; height: 145px!important;}
+  .OPNW_cat_forum {flex-direction: column-reverse!important; gap: 20px!important;}
+  .OPNW_catfo_sub {position: relative!important; padding: 0 !important; width: 100%!important; height: auto!important; opacity: 1!important;}
+  .OPNW_catfosub_link {background-color: #121216!important; padding: 15px!important;}
+  .OPNW_cat_forum {align-items: center!important; padding: 40px 40px 40px 60px !important;}
+  .OPNW_catfolastxt_infos {margin-bottom: 10px;}
+  .OPNW_catfolastxt_title a {max-width: 520px !important;}
+  .OPNW_catfo_sub {height: 180px !important;}
+  
+  #contexte-et-bases-de-donn-es .OPNW_cat_list {flex-direction: column!important;}
+  
+  #partie-rp .OPNW_cat_forum {display: grid; grid-template-columns: repeat(75, 10px); grid-template-rows: repeat(50, 10px); padding: 0 !important; gap: 0 !important;}
+  #partie-rp .OPNW_catfo_new {grid-column: 1 / 5; grid-row: 2 / 25; height: 250px !important;}
+  #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_new {grid-column: 72 / 76; grid-row: 2 / 25;}
+  #partie-rp .OPNW_catfo_title {grid-row: 45 / 50; grid-column: 3 / 74; width: 100% !important; bottom: 0 !important; left: 0 !important;}
+  #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_title {right: 0!important;}
+  #partie-rp .OPNW_catfo_img {grid-column: 1 / 76; grid-row: 26 / 51;}
+  #partie-rp .OPNW_catfo_img img {height: 250px !important;}
+  #partie-rp .OPNW_catfo_sub {width: 100% !important; height: 100% !important; grid-column: 1 / 35; grid-row: 3 / 24; top: 0 !important;}
+  #partie-rp .OPNW_cat_forum:nth-child(even) .OPNW_catfo_sub {width: 100% !important; height: 100% !important; grid-column: 41 / 75; grid-row: 3 / 24; top: 0 !important;}
+  #partie-rp .OPNW_catfosub_link {background-color: transparent !important; padding: 0 15px !important;}
+  #partie-rp .OPNW_catfo_lastpost {width: 100% !important; height: 100% !important; grid-column: 35 / 72; grid-row: 1 / 26;}
+  #partie-rp .OPNW_cat_forum:nth-child(even) .OPNW_catfo_lastpost {width: 100% !important; height: 100% !important; grid-column: 5 / 42; grid-row: 1 / 26;}
+  #partie-rp .OPNW_catfolast {height: 100% !important;}
+  #partie-rp .OPNW_catfolastxt_title a {max-width: 300px !important;}
+  #partie-rp .last-post-icon {padding: 8px 0 0 5px !important;}
+  #partie-rp .OPNW_catfo_desc {height: 100% !important; width: 100% !important; grid-column: 2 / 75; grid-row: 27 / 44; top: 0 !important; left: 0 !important;}
+  
+  .OPNW_topic {height: auto!important; flex-direction: column; padding: 20px; gap: 10px !important;}
+  .OPNW_topic_img {width: 100%!important; height: 30px!important; margin-left: 0!important;}
+  .OPNW_topic_infos {flex: 1;}
+  .OPNW_topicgrad {display: none;}
+  .OPNW_topic_ava {min-width: 200px!important;}
+  .OPNW_topic_ava img {margin-left: 0!important;}
+  
+  input[type="submit"], .button, .button1, .button2 {text-align: center;}
+  .topic-actions {display: flex; flex-direction: column; gap: 20px;}
+  
+  .OPNW_postauthor {font-size: 1.5rem!important;}
+  .OPNW_postpseudo {font-size: 2rem!important; line-height: 2rem!important;}
+  .OPNW_postactions {width: 100%;}
+  .OPNW_postdate {font-size: 1rem!important;}
+  .OPNW_postoption {font-size: 1.5rem!important;}
+}
+
+@media only screen and (max-width: 799px) {
+  .OPNW_headtitle {font-size:68px!important;}
+  .OPNW_catfolastxt_title a {max-width: 490px !important;}
+  
+  #partie-rp .OPNW_cat_forum {width: 720px; grid-template-columns: repeat(72, 10px);}
+  #partie-rp .OPNW_catfo_new {grid-column: 1 / 4; width: 100%;}
+  #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_new {grid-column: 70 / 73;}
+  #partie-rp .OPNW_catfo_title {grid-column: 3 / 71;}
+  #partie-rp .OPNW_catfo_img {grid-column: 1 / 73;}
+  #partie-rp .OPNW_catfo_sub {grid-column: 1 / 32;}
+  #partie-rp .OPNW_cat_forum:nth-child(even) .OPNW_catfo_sub {grid-column: 41 / 72;}
+  #partie-rp .OPNW_catfo_lastpost {grid-column: 32 / 70;}
+  #partie-rp .OPNW_cat_forum:nth-child(even) .OPNW_catfo_lastpost {grid-column: 4 / 42;}
+  #partie-rp .OPNW_catfo_title a {max-width: 60%;}
+  #partie-rp .OPNW_catfo_desc {grid-column: 2 / 72;}
+}
+
+@media only screen and (max-width: 767px) {
+  .OPNW_headtitle {font-size:49px!important; height: 30px!important;}
+  .OPNW_h2txt, .OPNW_h2sha {font-size: 50px!important;}
+  .OPNW_QEEL_title {font-size: 40px!important; text-align: center!important; line-height: 40px;}
+  .OPNW_QEEL_stat {flex-direction: column!important;}
+  .OPNW_QEEL_subtext {font-size: 14px!important;}
+  .OPNW_catfolast_ava {display: none !important;}
+  .OPNW_catfolast_txt {padding-left: 0 !important;}
+  .OPNW_catfolastxt_title a {max-width: 440px !important;}
+  
+  #partie-rp .OPNW_cat_forum {width: 550px; grid-template-columns: repeat(55, 10px); grid-template-rows: repeat(62, 10px);}
+  #partie-rp .OPNW_catfo_img {grid-column: 1 / 56; grid-row: 43 / 63;}
+  #partie-rp .OPNW_catfo_img img {height: 200px !important;}
+  #partie-rp .OPNW_catfo_title {grid-column: 3 / 54; grid-row: 57 / 62;}
+  #partie-rp .OPNW_catfo_title a {max-width: 60%; font-size: 22px;}
+  #partie-rp .OPNW_catfo_sub {grid-column: 1 / 55; grid-row: 23 / 41;}
+  #partie-rp .OPNW_cat_forum:nth-child(even) .OPNW_catfo_sub {grid-column: 1 / 55; grid-row: 23 / 41;}
+  #partie-rp .OPNW_catfo_lastpost {grid-column: 4 / 56; grid-row: 1 / 21;}
+  #partie-rp .OPNW_cat_forum:nth-child(even) .OPNW_catfo_lastpost {grid-column: 4 / 56; grid-row: 1 / 21;}
+  #partie-rp .OPNW_catfosub_link {background-color: transparent !important; padding: 0 15px !important;}
+  #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_new {grid-column: 1 / 4; max-height: 200px; grid-row: 1 / 21;}
+  #partie-rp .OPNW_catfo_new {grid-column: 1 / 4; max-height: 200px; grid-row: 1 / 21;}
+  #partie-rp .OPNW_catfolastxt_title a {max-width: 440px !important; padding: 0 !important; font-size: 18px !important;}
+  #partie-rp .OPNW_catfo_desc {grid-column: 2 / 55; grid-row: 44 / 58; padding: 15px !important;}
+  #partie-rp .OPNW_catfo_desc div {padding: 0 10px 0 5px !important;}
+  
+  .OPNW_postava {width: 140px!important; height: 140px!important; padding: 20px!important;}
+  .OPNW_postinfos {display: none !important;}
+  .OPNW_postava a img {width: 100px; height: 100px; object-fit: cover; object-position: top;}
+  .OPNW_postprofil {flex-wrap: wrap; gap: 7px;}
+}
+
+@media only screen and (max-width: 600px) {
+  .OPNW_headtitle {font-size:32px!important; height: 25px!important; margin-bottom: 0!important;}
+  .OPNW_header {padding: 20px!important;}
+  .OPNW_headstatop, .OPNW_headlinkpart {flex-direction: column!important;}
+  .OPNW_h2txt, .OPNW_h2sha {font-size: 45px!important; text-align: center!important;}
+  .OPNW_h2barre {display: none!important;}
+  .OPNW_nav_links li a, .OPNW_nav_links a {font-size: 16px!important;}
+  .OPNW_forum {padding: 0 20px 0 20px!important;}
+  
+  .OPNW_QEEL_left_infos {max-height: none!important; flex-direction: column!important;}
+  .OPNW_QEEL_nupseudo {width: 100%!important; max-width: 100% !important;}
+  .OPNW_QEEL_nuavatar {display: flex!important; justify-content: center!important;}
+  .OPNW_footer {padding: 20px!important;}
+  
+  .OPNW_catfolastxt_title a {max-width: 270px!important; font-size: 18px!important;}
+  .OPNW_catfolastxt_infos a {font-size: 14px !important; letter-spacing: 1px;}
+  .last-post-icon {padding: 2px 0 0 5px !important;}
+  .OPNW_catfostat {font-size: 14px !important;}
+  .OPNW_catfo_title {top: 7px!important; right: 30px!important; font-size: 16px!important; padding: 0 10px!important;}
+  .OPNW_catfo_img img {max-height: 200px !important;}
+  .OPNW_catfo_sub {height: auto !important;}
+  .OPNW_catfosub_link {max-height: 166px !important; background-color: transparent !important; padding: 0 10px !important; flex-wrap: nowrap !important; flex-direction: column;}
+  .OPNW_catfosub_link a {width: 100%; flex: 1!important; font-weight: lighter; text-align: center; font-size: 14px !important; padding: 5px 10px 4px !important; height: auto !important; letter-spacing: 1px;}
+  .OPNW_catfosub_link::-webkit-scrollbar {width: 10px;}
+  .OPNW_catfosub_link::-webkit-scrollbar-thumb {background: var(--grey); border-radius: 10px;}
+  .OPNW_catfosub_link::-webkit-scrollbar-track {border-radius: 10px; background: var(--darker);}
+  
+  #contexte-et-bases-de-donn-es .OPNW_cat_forum {padding-left: 40px !important;}
+  #contexte-et-bases-de-donn-es .OPNW_catfo_title {top: auto !important; right: auto !important;}
+  
+  #partie-rp .OPNW_cat_forum {width: auto; display: flex!important; z-index: 0;}
+  #partie-rp .OPNW_catfo_desc {display: none!important;}
+  #partie-rp .OPNW_catfo_lastpost {margin-bottom: 30px; z-index: 4;}
+  #partie-rp .OPNW_catfo_sub {margin-top: 20px; margin-bottom: 20px; z-index: 3!important; padding: 0 10px !important;}
+  #partie-rp .OPNW_catfosub_link {max-height: 192px!important;}
+  #partie-rp .OPNW_catfosub_link a {font-size: 14px !important; padding: 5px 10px 3px; letter-spacing: 1px;}
+  #partie-rp .OPNW_cat_forum .OPNW_catfo_new {height: 30px!important; position: absolute; top: 205px;}
+  #partie-rp .OPNW_catfo_img {width: 100%; height: auto; z-index: 1;}
+  #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_title:before {display: none;}
+  #partie-rp .OPNW_cat_forum .OPNW_catfo_title:before {display: none;}
+  #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_title:after {display: none;}
+  #partie-rp .OPNW_cat_forum .OPNW_catfo_title:after {display: none;}
+  #partie-rp .OPNW_catfo_title a {min-width: 100%!important; padding-bottom: 6px; color: var(--gold) !important;}
+  #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_title a:first-child {padding-left: 0 !important;}
+  #partie-rp .OPNW_catfo_title {z-index: 2!important; top: 7px!important; font-size: 16px!important; padding: 0 10px!important; align-items: end!important;}
+  #partie-rp .OPNW_catfolastxt_title a {max-width: 270px!important; font-size: 18px!important;}
+  #partie-rp .OPNW_catfolastxt_infos a {font-size: 16px !important;}
+  #partie-rp .last-post-icon {padding: 5px 0 0 5px !important;}
+  #partie-rp .OPNW_catfostat {font-size: 14px !important;}
+  #partie-rp .OPNW_catfo_img img {height: 100% !important;}
+  
+  .OPNW_topic_ava {display: none;}
+  select {width: 230px;}
+  input[type="submit"], .button, .button1, .button2 {font-size: 1rem!important;}
+  
+  .OPNW_postbloc {flex-direction: column;}
+  .OPNW_postavinf {flex-direction: row!important; justify-content: space-between;}
+  .OPNW_postauthor {font-size: 1.2rem!important;}
+  .OPNW_postpseudo {font-size: 1.5rem!important; line-height: 1.5rem!important;}
+}
+
+@media only screen and (max-width: 413px) {
+  .OPNW_headtitle {font-size:28px!important;}
+  .OPNW_headlinks div a {font-size: 18px!important;}
+  .OPNW_catfolastxt_title a {max-width: 260px!important;}
+}
+
+@media only screen and (max-width: 360px) {
+  .OPNW_catfolastxt_title a {max-width: 220px !important;}
+  .OPNW_catfostat {font-size: 8px !important;}
+  .last-post-icon img {height: 15px!important;}
+  .last-post-icon {padding: 4px 0 0 2px !important;}
+  
+  .OPNW_postdate {font-size: 0.8rem !important;}
+}
