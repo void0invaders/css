@@ -1,9 +1,14 @@
 :root {
-    --gold: #ffa667;
-    --red: #D31141;
     --res: #CE8013;
     --taken: #A44141;
     --free: #7EC557;
+    --gra: #047878;
+    --gr1: #ffb633;
+    --gr2: #f57337;
+    --gr3: #ab3232;
+    --gr4: #a42869;
+    --gr5: #7f2a70;
+    --gold: #ffa667;
     --white: #fff;
     --light: #968E8E;
     --brown: #733f31;
@@ -43,6 +48,19 @@ body {
 #cp-main .panel.sig {
     background-color: transparent;
     box-shadow: none;
+}
+
+.panel.msgdie-panel .inner h1.page-title {
+    text-align: center;
+    font-family: var(--osw);
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.panel.msgdie-panel .inner p {
+    text-align: center;
+    font-size: 16px;
 }
 
 input[type="text"], .inputbox {
@@ -118,6 +136,7 @@ input[type="radio"] {
 
 .panel {
     box-shadow: none;
+    padding: 20px;
 }
 
 fieldset dl:hover dt label {
@@ -192,6 +211,50 @@ input[type="text"], .inputbox {
 
 #tabs ul a:hover span {
     color: var(--white);
+}
+
+dl.codebox {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+}
+
+dl.codebox dt:first-child {
+    height: 25px;
+    position: relative;
+}
+
+.selectCode {
+    position: absolute;
+    right: 50px;
+    bottom: 8px;
+    cursor: pointer;
+    background-color: var(--gold);
+    padding: 2px 10px;
+    border-radius: 100px;
+    font-family: var(--osw);
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hidecode {
+    padding: 0px 10px !important;
+    display: inline-block !important;
+    margin: 0 5px;
+}
+
+.hidecode::after {
+  content: "";
+  display: block;
+}
+
+.hidecode dt:first-child, .hidecode:before {
+    display: none!important;
+}
+
+div.cont_code { 
+    clear: right; 
 }
 
 
@@ -443,7 +506,7 @@ a.mainmenu[href="/"] {
   top: -7px;
   right: -7px;
   border-radius: 50%;
-  background-color: var(--red);
+  background-color: var(--taken);
   transform: scale(0);
   opacity: 1;
   transition: transform 128ms var(--ease), opacity 64ms var(--ease);
@@ -666,7 +729,7 @@ a.mainmenu[href="/"] {
   color: var(--white);
   border: 0;
   outline: none;
-  background: var(--red);
+  background: var(--taken);
   border-radius: 50%;
   padding: 0;
 }
@@ -1207,6 +1270,7 @@ a.mainmenu[href="/"] {
 /*****Catégorie Base de Données - start*****/
 #contexte-et-bases-de-donn-es .OPNW_cat_list {
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #contexte-et-bases-de-donn-es .OPNW_cat_forum {
@@ -1486,10 +1550,6 @@ fieldset.submit-buttons {
     margin: 0;
 }
 
-.panel {
-    padding: 20px;
-}
-
 .panel fieldset {
     margin-bottom: 0;
 }
@@ -1704,6 +1764,7 @@ select:focus-visible {
     border-radius: 100px;
     align-self: center;
     margin-left: 20px;
+    background-size: contain;
 }
 
 .OPNW_topic_bloc {
@@ -2003,6 +2064,10 @@ select:focus-visible {
     text-align: justify;
     font-size: 14px;
     line-height: 20px;
+}
+
+.OPNW_posttxt i {
+    line-height: inherit;
 }
 
 .OPNW_postedit:empty {
@@ -2317,15 +2382,23 @@ select:focus-visible {
 }
 
 #qgdt1 {
-    color: #A9453A;
+    color: var(--gr1);
 }
 
 #qgdt2 {
-    color: #BF7C52;
+    color: var(--gr2);
 }
 
 #qgdt3 {
-    color: #FFD082;
+    color: var(--gr3);
+}
+
+#qgdt4 {
+    color: var(--gr4);
+}
+
+#qgdt5 {
+    color: var(--gr5);
 }
 
 .OPNW_QEEL_grpdesc_txt {
@@ -2358,15 +2431,23 @@ select:focus-visible {
 }
 
 #qgn1 {
-    background-color: #A9453A;
+    background-color: var(--gr1);
 }
 
 #qgn2 {
-    background-color: #BF7C52;
+    background-color: var(--gr2);
 }
 
 #qgn3 {
-    background-color: #FFD082;
+    background-color: var(--gr3);
+}
+
+#qgn4 {
+    background-color: var(--gr4);
+}
+
+#qgn5 {
+    background-color: var(--gr5);
 }
 /***** QEEL - END *****/
 
@@ -2525,7 +2606,8 @@ select:focus-visible {
   
   #contexte-et-bases-de-donn-es .OPNW_cat_list {flex-direction: column!important;}
   
-  #partie-rp .OPNW_cat_forum {display: grid; grid-template-columns: repeat(75, 10px); grid-template-rows: repeat(50, 10px); padding: 0 !important; gap: 0 !important;}
+  #partie-rp .OPNW_cat_forum {display: grid; grid-template-columns: repeat(75, 10px); grid-template-rows: repeat(50, 10px); padding: 0 !important; gap: 0 !important; width: 750px;}
+  #partie-rp .OPNW_cat_list {align-items: center;}
   #partie-rp .OPNW_catfo_new {grid-column: 1 / 5; grid-row: 2 / 25; height: 250px !important;}
   #partie-rp .OPNW_cat_forum:nth-child(odd) .OPNW_catfo_new {grid-column: 72 / 76; grid-row: 2 / 25;}
   #partie-rp .OPNW_catfo_title {grid-row: 45 / 50; grid-column: 3 / 74; width: 100% !important; bottom: 0 !important; left: 0 !important;}
